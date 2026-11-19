@@ -1,0 +1,31 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/api/news/categories
+
+###
+GET http://127.0.0.1:8000/api/news/list?categoryId=1
+
+###
+GET http://127.0.0.1:8000/api/news/detail?id=1
+
+###
+POST http://127.0.0.1:8000/api/users/register
+
+###
+POST http://127.0.0.1:8000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "test01",
+    "password": "123456",
+    "email": "test@qq.com"
+}
